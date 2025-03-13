@@ -53,9 +53,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/ae22fc55-04af-446b-b187-8608575467cf" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  ![image](https://github.com/user-attachments/assets/ae22fc55-04af-446b-b187-8608575467cf)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+3. From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) which is a backend webserver language that osTicket runs on. So double click the folder on the desktop to open it. double click it again then double click "PHP manager" and install it saying yes and I agree. Then within the same folder, install the rewrite file and finish. Next create a directory on the c drive called php, C:\PHP by right clicking the manila folder on the bottom and opening a new file explorer, select the Windows (C:) on the left,then right click in the white space to the right to create and name a new folder "PHP". Now unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) from the previos windows explorer into the new “C:\PHP” folder by right clicking this php-7.3.8 file of binary language files and selecting "extract all" and browse to the C:\PHP folder to select it, and extract it into. 
 </p>
 <br />
