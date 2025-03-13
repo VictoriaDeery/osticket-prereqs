@@ -107,7 +107,34 @@ pic ![image](https://github.com/user-attachments/assets/33a2b155-26cd-4154-af9c-
 
 <p>
 </p>
-pic
+![image](https://github.com/user-attachments/assets/60ba9e15-c41e-4a5c-b126-a390bf0a0ad2)
+![image](https://github.com/user-attachments/assets/7020ddf7-77d9-49df-aded-03fe1b8a9d01)
+
 <p>
-  8. go back to the browser tab that opened for you with te checkmarks and 'x's' and cllick "continue" at the bottom. name the helpdesk and give an email, fill out the admin section making this second email unique from the first. Make a new user and password. Scroll down, and now log into the database appllication that we created on the backend and then create a database specific to osTicket, and then provide the credentials here on this browser tab. Locate the osTicket-Installation-files folder on the desktop, and open it, then install Heidi SQL (an app that allows connection and configuration of the database) selecting next until you can select install, and then open it.
+  8. go back to the browser tab that opened for you with te checkmarks and 'x's' and cllick "continue" at the bottom. name the helpdesk and give an email, fill out the admin section making this second email unique from the first. Make a new user and password. Scroll down, and now log into the database appllication that we created on the backend and then create a database specific to osTicket, and then provide the credentials here on this browser tab. Locate the osTicket-Installation-files folder on the desktop, and open it, then install Heidi SQL (an app that allows connection and configuration of the database) selecting next until you can select install, and then open it by selecting finish with "Launch Heidi sql" checked on then select skip. Now to use heidi sql to make a connection to the database and set up a database for osTicket to use. So select "+New" in the bottom left and input the username and password we made towards the beginning when we created the SQL server to create a new session. Then select "open" which opens the connection to the database so now we are connected to the session.Now to create the database, rightclick "Unnamed" select "create new" select "database" and name it "osTicket" and then "osTicket" will show on the left side below Unnamed. The installation that we are doing in the browser tab will make use of this database and put information in there.
+</p>
+<p>
+  pic
+  ![image](https://github.com/user-attachments/assets/08688415-079f-450a-98f1-29f11d4518ae)
+
+<p>
+  9.In the browser tab under "database settings" under "MySQL Database:" type "osTicket" which is the new database we just created inside of heidi. And enter the username and password you used when we first created the MySQL. then click "install now." You may look inside the database inside heidi by right clicking the osTicket databas on the left and selecting refresh and notice this is no longer empty. You may close Heidi. in the browser tab, below "you'll find some useful links regarding your installation." are useful URLs to log in as an admin or user: Your osTicket URL:
+http://localhost/osTicket/	Your Staff Control Panel:
+http://localhost/osTicket/scp
+osTicket Forums:
+https://forum.osticket.com/	osTicket Documentation:
+https://docs.osticket.com/
+</p>
+![image](https://github.com/user-attachments/assets/44fe6dff-773a-498e-87fc-c033036df9c6)
+![image](https://github.com/user-attachments/assets/a25d301f-4edb-4e0a-9970-bfb44ae7e98a)
+
+<p>
+try going to http://localhost/osTicket/scp/login.php now input the username and password created for osTicket Admin and you will see the ticketing system.
+<p>
+![image](https://github.com/user-attachments/assets/03d6d399-7e77-4284-afc8-d031e06a71e4)
+
+  <p>
+    10 go to http://localhost/osTicket/ to use the ticketing system as an end user.
+</p>
+in my next repository I will show you how to configure SLAs and departments
 </p>
