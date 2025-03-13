@@ -22,7 +22,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
+- osTicket docuentation and gather all the files
 - Item 2
 - Item 3
 - Item 4
@@ -58,6 +58,56 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 </p>
 <p>
-3. From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) which is a backend webserver language that osTicket runs on. So double click the folder on the desktop to open it. double click it again then double click "PHP manager" and install it saying yes and I agree. Then within the same folder, install the rewrite file and finish. Next create a directory on the c drive called php, C:\PHP by right clicking the manila folder on the bottom and opening a new file explorer, select the Windows (C:) on the left,then right click in the white space to the right to create and name a new folder "PHP". Now unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) from the previos windows explorer into the new “C:\PHP” folder by right clicking this php-7.3.8 file of binary language files and selecting "extract all" and browse to the C:\PHP folder to select it, and extract it into. 
+3. From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) which is a backend webserver language that osTicket runs on. So double click the folder on the desktop to open it. double click it again then double click "PHP manager" and install it saying yes and I agree. Then within the same folder, install the rewrite file and finish. Next create a directory on the c drive called php, C:\PHP by right clicking the manila folder on the bottom and opening a new file explorer, select the Windows (C:) on the left,then right click in the white space to the right to create and name a new folder "PHP". Now unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) from the previos windows explorer into the new “C:\PHP” folder by right clicking this php-7.3.8 file of binary language files and selecting "extract all" and browse to the C:\PHP folder to select it, and extract it into. So the PHP folder should have many files now. Now PHP files that the osTicket is going to use, is on the C drive.
 </p>
 <br />
+
+<p>
+<img src="https://github.com/user-attachments/assets/ae22fc55-04af-446b-b187-8608575467cf" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  ![image](https://github.com/user-attachments/assets/ae22fc55-04af-446b-b187-8608575467cf)
+
+</p>
+<p>
+4.From the “osTicket-Installation-Files” folder, double click to install VC_redist.x86.exe. And from the “osTicket-Installation-Files” folder. Also install MySQL 5.5.62 (mysql-5.5.62-win32.msi) (database to store all info) select Typical Setup ->Finish-> Launch Configuration Wizard (after install) ->select next and select Standard Configuration -> create a username and password carefully. Select "next" and "execute" and "finish." Now the 
+database is installed, but it is empty, not configured...yet. Now we will configure it in our webserver using the IIS as an admin.
+</p>
+<br />
+
+<p>
+<img src="https://github.com/user-attachments/assets/bfbb75b5-5511-4278-8209-9e8a7d75c6f7" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+</p>
+<img src="https://github.com/user-attachments/assets/3cbbc61e-c9da-430b-a465-c832c88a182e"
+
+<p>
+5. click start, search IIS, run as admin, and a new window will pop up. Now register PHP from within IIS to make the web server aware of and locate PHP on the computer. We installed PHP manager earlier, so now double click it in this new window. select "register a new PHP version" and browse for the one saved in the PHP folder, specifically doule clicking this folder and selecting the "php-cgi" application file and "ok". Now reload IIS (Open IIS, Stop and Start the server) by clicking "osTicket-VM (osTicket-VM\username) on the top left of the IIS manager window, right click there again and select stop, right click it again and select start. Then Install osTicket from within the folder stored on the desktop by right clicking the "osTicket-v1.15.8" compressed folder and extracting all there. Then open this unipped copy of this folder and copy the "upload" folder to a new location. first open this new location by opening a new Windows explorer-> Windows (C:) -> inetpub -> wwwroot -> now select the "upload" folder and then drag and drop the upload folder into the wwwroot folder to move it here. Right click it to rename the upload folder "osTicket" then Restart the IIS server again (stop and start). 
+
+
+</p>
+<br />
+
+<p>
+<img src="https://github.com/user-attachments/assets/a5e9946e-f1f6-4c69-9153-172c7a4ea29e" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+
+</p>
+<p>
+6. Now load the OS ticket site in the server. In the IIS manager in the top left near where we restarted it, click on arrow to the right of "Sites", then the arrow to the right of "Default web site," then actually select "osTicket." Now on the right of the screen, select "browse *.80 (http) and a new browser tab will open, shown in the picture above. Since some features are not yet available, indicated with a red 'x' next I'll walk you through the steps to enable all features. Go back to IIS manager and again click on the arrow to the right of "Sites", then the arrow to the right of "Default web site," then actually select "osTicket." This time now, double click on the PHP manager icon, then at the bottom of the new page click "enable to disable an extension." The grayed oout ones are disabled. Within the gray list of extensions, Enable: php_imap.dll, Enable: php_intl.dll, and Enable: php_opcache.dll by finding and right clicking on and selecting enable. Now go back to the last browser tab that popped up with the checkmarks and x's and refresh by clicking the circle with an arrow in it, between the back button and URL and all except the last two should have checkmarks.
+
+</p>
+<br />
+nnnn
+
+pic ![image](https://github.com/user-attachments/assets/33a2b155-26cd-4154-af9c-77e2f9bd6bbb)
+
+7. now rename the ost-sampleconfig.php file within the osTicket to ost-config.php and then change the permissions to make sure osTicket has access to make changes to it in the back end. In file explorer search "C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php" then rightclick it to rename it to ost-sampleconfig so C:\inetpub\wwwroot\osTicket\include\ost-config.php now right click the file ->properties -> security -> advanced ->disable inheritance ->remove all inherited permissions from this host.
+ Now add permissions by clicking "add" select "select a principal" then in the bottom box "enter the object name to select" and consider the user that osTicket represents and who you want to give access to it then select ok. and select the controls you want these users to have. For the sake of this non-secure demo, I wrote "everyone" and selected to give them full access selecting apply, ok, and ok.
+
+
+<p>
+</p>
+pic
+<p>
+  8. go back to the browser tab that opened for you with te checkmarks and 'x's' and cllick "continue" at the bottom. name the helpdesk and give an email, fill out the admin section making this second email unique from the first. Make a new user and password. Scroll down, and now log into the database appllication that we created on the backend and then create a database specific to osTicket, and then provide the credentials here on this browser tab. Locate the osTicket-Installation-files folder on the desktop, and open it, then install Heidi SQL (an app that allows connection and configuration of the database) selecting next until you can select install, and then open it.
+</p>
