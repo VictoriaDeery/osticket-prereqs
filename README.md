@@ -41,7 +41,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"height="80%" width="80%" />
 <img src="https://github.com/user-attachments/assets/e82fd2dc-abcf-4fbc-ab88-5bc7b57a559f" height="80%" width="80%" />
 
 </p>
@@ -97,7 +96,7 @@ database is installed, but it is empty, not configured...yet. Now we will config
 
 </p>
 <br />
-nnnn
+
 
 <img src="https://github.com/user-attachments/assets/33a2b155-26cd-4154-af9c-77e2f9bd6bbb" height="80%" width="80%" />
 
@@ -114,7 +113,7 @@ nnnn
   8. go back to the browser tab that opened for you with te checkmarks and 'x's' and cllick "continue" at the bottom. name the helpdesk and give an email, fill out the admin section making this second email unique from the first. Make a new user and password. Scroll down, and now log into the database appllication that we created on the backend and then create a database specific to osTicket, and then provide the credentials here on this browser tab. Locate the osTicket-Installation-files folder on the desktop, and open it, then install Heidi SQL (an app that allows connection and configuration of the database) selecting next until you can select install, and then open it by selecting finish with "Launch Heidi sql" checked on then select skip. Now to use heidi sql to make a connection to the database and set up a database for osTicket to use. So select "+New" in the bottom left and input the username and password we made towards the beginning when we created the SQL server to create a new session. Then select "open" which opens the connection to the database so now we are connected to the session.Now to create the database, rightclick "Unnamed" select "create new" select "database" and name it "osTicket" and then "osTicket" will show on the left side below Unnamed. The installation that we are doing in the browser tab will make use of this database and put information in there.
 </p>
 <p>
-  pic
+
 <img src="https://github.com/user-attachments/assets/08688415-079f-450a-98f1-29f11d4518ae" height="80%" width="80%" />
 
 <p>
