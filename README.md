@@ -31,8 +31,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Installation Steps</h2>
 
 <p> 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://github.com/user-attachments/assets/e4ca9b8e-61e7-44bd-9105-1e3eed437394"
+<img src="https://github.com/user-attachments/assets/e4ca9b8e-61e7-44bd-9105-1e3eed437394" height="80%" width="80%" />
 
 </p>
 <p>
@@ -42,8 +41,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://github.com/user-attachments/assets/e82fd2dc-abcf-4fbc-ab88-5bc7b57a559f>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"height="80%" width="80%" />
+<img src="https://github.com/user-attachments/assets/e82fd2dc-abcf-4fbc-ab88-5bc7b57a559f" height="80%" width="80%" />
 
 </p>
 <p>
@@ -51,11 +50,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 </p>
 <br />
-<img src="https://github.com/user-attachments/assets/cebbd618-aacf-44b2-8162-ea382f8b33ec" />
+<img src="https://github.com/user-attachments/assets/cebbd618-aacf-44b2-8162-ea382f8b33ec" height="80%" width="80%" />
 
 <p>
 <img src="https://github.com/user-attachments/assets/ae22fc55-04af-446b-b187-8608575467cf" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  ![image](https://github.com/user-attachments/assets/ae22fc55-04af-446b-b187-8608575467cf)
+<img src="https://github.com/user-attachments/assets/ae22fc55-04af-446b-b187-8608575467cf" height="80%" width="80%" />
 
 </p>
 <p>
@@ -65,7 +64,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>
 <img src="https://github.com/user-attachments/assets/ae22fc55-04af-446b-b187-8608575467cf" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  ![image](https://github.com/user-attachments/assets/ae22fc55-04af-446b-b187-8608575467cf)
+<img src="https://github.com/user-attachments/assets/ae22fc55-04af-446b-b187-8608575467cf" height="80%" width="80%" />
 
 </p>
 <p>
@@ -79,7 +78,7 @@ database is installed, but it is empty, not configured...yet. Now we will config
 
 
 </p>
-<img src="https://github.com/user-attachments/assets/3cbbc61e-c9da-430b-a465-c832c88a182e"
+<img src="https://github.com/user-attachments/assets/3cbbc61e-c9da-430b-a465-c832c88a182e" height="80%" width="80%" />
 
 <p>
 5. click start, search IIS, run as admin, and a new window will pop up. Now register PHP from within IIS to make the web server aware of and locate PHP on the computer. We installed PHP manager earlier, so now double click it in this new window. select "register a new PHP version" and browse for the one saved in the PHP folder, specifically doule clicking this folder and selecting the "php-cgi" application file and "ok". Now reload IIS (Open IIS, Stop and Start the server) by clicking "osTicket-VM (osTicket-VM\username) on the top left of the IIS manager window, right click there again and select stop, right click it again and select start. Then Install osTicket from within the folder stored on the desktop by right clicking the "osTicket-v1.15.8" compressed folder and extracting all there. Then open this unipped copy of this folder and copy the "upload" folder to a new location. first open this new location by opening a new Windows explorer-> Windows (C:) -> inetpub -> wwwroot -> now select the "upload" folder and then drag and drop the upload folder into the wwwroot folder to move it here. Right click it to rename the upload folder "osTicket" then Restart the IIS server again (stop and start). 
@@ -100,7 +99,7 @@ database is installed, but it is empty, not configured...yet. Now we will config
 <br />
 nnnn
 
-pic ![image](https://github.com/user-attachments/assets/33a2b155-26cd-4154-af9c-77e2f9bd6bbb)
+<img src="https://github.com/user-attachments/assets/33a2b155-26cd-4154-af9c-77e2f9bd6bbb" height="80%" width="80%" />
 
 7. now rename the ost-sampleconfig.php file within the osTicket to ost-config.php and then change the permissions to make sure osTicket has access to make changes to it in the back end. In file explorer search "C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php" then rightclick it to rename it to ost-sampleconfig so C:\inetpub\wwwroot\osTicket\include\ost-config.php now right click the file ->properties -> security -> advanced ->disable inheritance ->remove all inherited permissions from this host.
  Now add permissions by clicking "add" select "select a principal" then in the bottom box "enter the object name to select" and consider the user that osTicket represents and who you want to give access to it then select ok. and select the controls you want these users to have. For the sake of this non-secure demo, I wrote "everyone" and selected to give them full access selecting apply, ok, and ok.
@@ -108,34 +107,34 @@ pic ![image](https://github.com/user-attachments/assets/33a2b155-26cd-4154-af9c-
 
 <p>
 </p>
-![image](https://github.com/user-attachments/assets/60ba9e15-c41e-4a5c-b126-a390bf0a0ad2)
-![image](https://github.com/user-attachments/assets/7020ddf7-77d9-49df-aded-03fe1b8a9d01)
+<img src="https://github.com/user-attachments/assets/60ba9e15-c41e-4a5c-b126-a390bf0a0ad2" height="80%" width="80%" />
+<img src="https://github.com/user-attachments/assets/7020ddf7-77d9-49df-aded-03fe1b8a9d01" height="80%" width="80%" />
 
 <p>
   8. go back to the browser tab that opened for you with te checkmarks and 'x's' and cllick "continue" at the bottom. name the helpdesk and give an email, fill out the admin section making this second email unique from the first. Make a new user and password. Scroll down, and now log into the database appllication that we created on the backend and then create a database specific to osTicket, and then provide the credentials here on this browser tab. Locate the osTicket-Installation-files folder on the desktop, and open it, then install Heidi SQL (an app that allows connection and configuration of the database) selecting next until you can select install, and then open it by selecting finish with "Launch Heidi sql" checked on then select skip. Now to use heidi sql to make a connection to the database and set up a database for osTicket to use. So select "+New" in the bottom left and input the username and password we made towards the beginning when we created the SQL server to create a new session. Then select "open" which opens the connection to the database so now we are connected to the session.Now to create the database, rightclick "Unnamed" select "create new" select "database" and name it "osTicket" and then "osTicket" will show on the left side below Unnamed. The installation that we are doing in the browser tab will make use of this database and put information in there.
 </p>
 <p>
   pic
-  ![image](https://github.com/user-attachments/assets/08688415-079f-450a-98f1-29f11d4518ae)
+<img src="https://github.com/user-attachments/assets/08688415-079f-450a-98f1-29f11d4518ae" height="80%" width="80%" />
 
 <p>
-  9.In the browser tab under "database settings" under "MySQL Database:" type "osTicket" which is the new database we just created inside of heidi. And enter the username and password you used when we first created the MySQL. then click "install now." You may look inside the database inside heidi by right clicking the osTicket databas on the left and selecting refresh and notice this is no longer empty. You may close Heidi. in the browser tab, below "you'll find some useful links regarding your installation." are useful URLs to log in as an admin or user: Your osTicket URL:
-http://localhost/osTicket/	Your Staff Control Panel:
-http://localhost/osTicket/scp
-osTicket Forums:
-https://forum.osticket.com/	osTicket Documentation:
-https://docs.osticket.com/
+  9.In the browser tab under "database settings" under "MySQL Database:" type "osTicket" which is the new database we just created inside of heidi. And enter the username and password you used when we first created the MySQL. then click "install now." You may look inside the database inside heidi by right clicking the osTicket databas on the left and selecting refresh and notice this is no longer empty. You may close Heidi. in the browser tab, below "you'll find some useful links regarding your installation." are useful URLs to log in as an admin or user:
+<p>
 </p>
-![image](https://github.com/user-attachments/assets/44fe6dff-773a-498e-87fc-c033036df9c6)
-![image](https://github.com/user-attachments/assets/a25d301f-4edb-4e0a-9970-bfb44ae7e98a)
+Your osTicket URL: http://localhost/osTicket/	    Your Staff Control Panel: http://localhost/osTicket/scp
+<p>
+  osTicket Forums: https://forum.osticket.com/	  osTicket Documentation: https://docs.osticket.com/
+</p>
+<img src="https://github.com/user-attachments/assets/44fe6dff-773a-498e-87fc-c033036df9c6" height="80%" width="80%" />
+<img src="https://github.com/user-attachments/assets/a25d301f-4edb-4e0a-9970-bfb44ae7e98a" height="80%" width="80%" />
 
 <p>
-try going to http://localhost/osTicket/scp/login.php now input the username and password created for osTicket Admin and you will see the ticketing system.
+10. Try going to http://localhost/osTicket/scp/login.php now input the username and password created for osTicket Admin and you will see the ticketing system.
 <p>
-![image](https://github.com/user-attachments/assets/03d6d399-7e77-4284-afc8-d031e06a71e4)
+<img src="https://github.com/user-attachments/assets/03d6d399-7e77-4284-afc8-d031e06a71e4" height="80%" width="80%" />
 
   <p>
-    10 go to http://localhost/osTicket/ to use the ticketing system as an end user.
+11. Go to http://localhost/osTicket/ to use the ticketing system as an end user.
 </p>
 in my next repository I will show you how to configure SLAs and departments
 </p>
