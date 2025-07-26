@@ -22,7 +22,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- osTicket docuentation and gather all the files
+- osTicket docuentation and gathering of all required files
 
 <h2>Installation Steps</h2>
 
@@ -31,7 +31,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 </p>
 <p>
-1. First create a VM in Azure, then log into remote desktop (for detailed steps for this, go to my repository
+1. First create aWindows VM in Azure, then log into remote desktop (for detailed steps for this, go to my repository
   
   [Azure Compute and Networking](https://github.com/victoriadeery/azure-computing-and-networking)  
 Then within the VM (osticket-vm), download the osTicket-Installation-Files.zip and move it to your desktop, and then unzip it. The folder should be called “osTicket-Installation-Files” As a test, open a browser and search 127.0.0.1 and you should see that it refused to connect. So in the next step we will enable IIS in Windows with CGI and with this installed webserver, this page will change. And we will use the files in this folder to install osTicket and some of the dependencies.
@@ -51,7 +51,6 @@ Then within the VM (osticket-vm), download the osTicket-Installation-Files.zip a
 <img src="https://github.com/user-attachments/assets/cebbd618-aacf-44b2-8162-ea382f8b33ec" height="80%" width="80%" />
 
 <p>
-<img src="https://github.com/user-attachments/assets/ae22fc55-04af-446b-b187-8608575467cf" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://github.com/user-attachments/assets/ae22fc55-04af-446b-b187-8608575467cf" height="80%" width="80%" />
 
 </p>
